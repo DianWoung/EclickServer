@@ -75,3 +75,4 @@ func (user *User) onLogin() {
 func (user *User) onLogout() {
 
 }
+

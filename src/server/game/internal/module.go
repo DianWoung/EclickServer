@@ -16,6 +16,7 @@ type Module struct {
 
 func (m *Module) OnInit() {
 	m.Skeleton = skeleton
+//	InitRooms()
 }
 
 func (m *Module) OnDestroy() {

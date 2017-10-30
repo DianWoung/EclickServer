@@ -1,0 +1,26 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Go template
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
+.glide/
+
+.gitignore
+.idea/
+pkg/
+Would skip repository src/github.com/golang/protobuf
+Would skip repository src/github.com/gorilla/websocket
+Would skip repository src/github.com/json-iterator/go
+Would skip repository src/github.com/name5566/leaf
+Would skip repository src/github.com/satori/go.uuid
+Would skip repository src/github.com/WesleiRamos/tcp_client
