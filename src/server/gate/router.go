@@ -19,4 +19,5 @@ func init() {
 	msg.Processor.SetRouter(&msg.C2S_LeftRoom{},game.ChanRPC)
 	msg.Processor.SetRouter(&msg.C2S_BroadcastRoom{},game.ChanRPC)
 	msg.Processor.SetRouter(&msg.C2S_GetRooms{},game.ChanRPC)
+	msg.Processor.SetRouter(&msg.C2S_RemoveRoom{},game.ChanRPC)
 }

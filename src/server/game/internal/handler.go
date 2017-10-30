@@ -103,10 +103,8 @@ func handleGetRooms(args []interface{})  {
 }
 
 func handleRemoveRoom(args []interface{})  {
-	m := args[0].(*msg.C2S_BroadcastRoom)
+	m := args[0].(*msg.C2S_RemoveRoom)
 	a := args[1].(gate.Agent)
 	ok := RemoveRoom(m.ID)
-	if ok!=msg.S2C_Room_OK {
-		a.WriteMsg(&msg.S2C_Room{ok})
-	}
+	a.WriteMsg(&msg.S2C_Room{ok})
 }

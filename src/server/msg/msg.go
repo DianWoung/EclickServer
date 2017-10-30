@@ -72,16 +72,16 @@ type C2S_CreateRoom struct {
 }
 
 type C2S_JoinRoom struct {
-	ID uint
+	ID uint `json:"id"`
 }
 
 type C2S_LeftRoom struct {
-	ID uint
+	ID uint `json:"id"`
 }
 
 type C2S_BroadcastRoom struct {
-	ID uint
-	Msg string
+	ID uint `json:"id"`
+	Msg string `json:"msg"`
 }
 
 type C2S_GetRooms struct {
@@ -89,25 +89,25 @@ type C2S_GetRooms struct {
 }
 
 type S2C_AllRooms struct {
-	RoomList []RoomInfo
+	RoomList []RoomInfo `json:"roomlist"`
 }
 type RoomInfo struct {
-	ID uint
+	ID uint `json:"id"`
 }
 
 type S2C_NewRoomID struct {
-	ID uint
+	ID uint `json:"id"`
 }
 
 type S2C_Room struct {
-	Err uint
+	Err uint `json:"err"`
 }
 
 type S2C_MsgFromRoom struct {
-	AccID string
-	Msg string
+	AccID string `json:"accid"`
+	Msg string `json:"msg"`
 }
 
 type C2S_RemoveRoom struct {
-	ID uint
+	ID uint `json:"id"`
 }
